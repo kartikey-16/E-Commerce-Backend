@@ -14,7 +14,7 @@ public class Order {
     private Integer id;
 
 
-    @ManyToMany(fetch = FetchType.LAZY ,cascade =  CascadeType.ALL)
+    @ManyToMany(fetch = FetchType.LAZY )
     @JoinTable(
             joinColumns = @JoinColumn(name = "order_id"),
             inverseJoinColumns = @JoinColumn(name = "product_id")
